@@ -1,0 +1,5 @@
+Inclui el texto alt en todas las imagenes.
+Agregue etiquetas meta (description, keywords, etc) en index, makeup y skincare.
+Agregue la metaetiquta description en el index.
+Favicon en todas las paginas.
+Titulo en todas las paginas.
