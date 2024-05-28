@@ -24,7 +24,7 @@ $color5:#fc9995;
 } 
 .logo, .encabezado, .bienvenida{
     text-align: center;
-    background-color: $color1;
+    background: linear-gradient(45deg, $color1, $color2);
     padding: 5px;
     margin: 0%;
 }
@@ -101,11 +101,11 @@ $color5:#fc9995;
 
 .item1{
     grid-area: img1;
-    background-image: url(./assets/multimedia-inicio/img1.jpg);
+    background-image: url(../assets/multimedia-inicio/img1.jpg);
 }
 .item2{
     grid-area: texto1;
-    background-color:$color4;
+    background:linear-gradient(45deg, $color4, $color1);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -113,11 +113,11 @@ $color5:#fc9995;
 }
 .item3{
     grid-area: img2;
-    background-image: url(./assets/multimedia-inicio/facemask_img2.jpg);
+    background-image: url(../assets/multimedia-inicio/facemask_img2.jpg);
 }
 .item4{
     grid-area: texto2;
-    background-color: $color5;
+    background:linear-gradient(45deg, $color4, $color1);
     text-align: center;
     h3{
     display: flex;
@@ -131,11 +131,11 @@ $color5:#fc9995;
 
 .item5{
     grid-area: img3; 
-    background-image: url(./assets/multimedia-inicio/img3.jpg);
+    background-image: url(../assets/multimedia-inicio/img3.jpg);
 }
 .item6{ 
     grid-area: texto3;
-    background-color:#f89692;
+    background: linear-gradient(45deg, $color4, $color1);
     text-align: center;
     h3{
     @extend h3;
@@ -150,25 +150,48 @@ $color5:#fc9995;
     margin: 0;
 }
 //FOOTER//
-footer{
-    background-color:$color3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+    background-color: $color3;
+    color: black;
+    padding: 20px 0;
+    background: linear-gradient(45deg, $color3, #6e023a);
+    color: #fff;
+    padding: 20px 0;
+    .footer-container{ 
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+    .footer-section{
+        flex: 1;
+        margin: 0 20px;
+        text-align: center;
+        a{
+            color:black;
+            padding: 10px;
+            font-size: 25px;
+            :hover{
+                color: grey;
+            }
+        }
+    }
+    .botonF{
+        background-color:grey;
+    }
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-section {
+            margin: 10px 0;
+        }
+    }
+}
 
-    .suscribe, .newslewtter{
-        align-content: center;
-        color: aliceblue;
-}
-}
-.botonF, .textoF{
-    background-color: grey;
-}
-
-.mas{
-    color:black;
-    
-}
 //MAKEUP Y SKINCARE//
 .makeCuerpo, .skinCuerpo {
     display: grid;
@@ -223,7 +246,7 @@ footer{
 }
 //CONTACTO//
 .cont{
-    background-image: url(./assets/fondo-contacto.jpg);
+    background-image: url(../assets/fondo-contacto.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -251,7 +274,7 @@ footer{
 }
 
 .formComent{
-    background-image: url(./assets/fondo_comentarios.jpg);
+    background-image: url(../assets/fondo_comentarios.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
@@ -271,3 +294,4 @@ footer{
     text-align: center;
     text-decoration:double;
 }
+

@@ -16,7 +16,7 @@
 
 .logo, .encabezado, .bienvenida {
   text-align: center;
-  background-color: #F47570;
+  background: linear-gradient(45deg, #F47570, #F9CB9C);
   padding: 5px;
   margin: 0%;
 }
@@ -84,12 +84,12 @@
 
 .item1 {
   grid-area: img1;
-  background-image: url(./assets/multimedia-inicio/img1.jpg);
+  background-image: url(../assets/multimedia-inicio/img1.jpg);
 }
 
 .item2 {
   grid-area: texto1;
-  background-color: #f3928e;
+  background: linear-gradient(45deg, #f3928e, #F47570);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,12 +98,12 @@
 
 .item3 {
   grid-area: img2;
-  background-image: url(./assets/multimedia-inicio/facemask_img2.jpg);
+  background-image: url(../assets/multimedia-inicio/facemask_img2.jpg);
 }
 
 .item4 {
   grid-area: texto2;
-  background-color: #fc9995;
+  background: linear-gradient(45deg, #f3928e, #F47570);
   text-align: center;
 }
 .item4 h3, .item4 p {
@@ -113,12 +113,12 @@
 }
 .item5 {
   grid-area: img3;
-  background-image: url(./assets/multimedia-inicio/img3.jpg);
+  background-image: url(../assets/multimedia-inicio/img3.jpg);
 }
 
 .item6 {
   grid-area: texto3;
-  background-color: #f89692;
+  background: linear-gradient(45deg, #f3928e, #F47570);
   text-align: center;
 }
 .jumbo {
@@ -128,21 +128,44 @@
 
 footer {
   background-color: #985357;
+  color: black;
+  padding: 20px 0;
+  background: linear-gradient(45deg, #985357, #6e023a);
+  color: #fff;
+  padding: 20px 0;
+}
+footer .footer-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-footer .suscribe, footer .newslewtter {
-  align-content: center;
-  color: aliceblue;
+footer .footer-section {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
 }
-
-.botonF, .textoF {
+footer .footer-section a {
+  color: black;
+  padding: 10px;
+  font-size: 25px;
+}
+footer .footer-section a :hover {
+  color: grey;
+}
+footer .botonF {
   background-color: grey;
 }
-
-.mas {
-  color: black;
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-section {
+    margin: 10px 0;
+  }
 }
 
 .makeCuerpo, .skinCuerpo {
@@ -195,7 +218,7 @@ footer .suscribe, footer .newslewtter {
   }
 }
 .cont {
-  background-image: url(./assets/fondo-contacto.jpg);
+  background-image: url(../assets/fondo-contacto.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
@@ -221,7 +244,7 @@ footer .suscribe, footer .newslewtter {
 }
 
 .formComent {
-  background-image: url(./assets/fondo_comentarios.jpg);
+  background-image: url(../assets/fondo_comentarios.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
